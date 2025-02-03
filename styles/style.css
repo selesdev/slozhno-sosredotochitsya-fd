@@ -1,5 +1,28 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+.header {
+  background-image:url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  min-height: 668px;
+  padding: 65px 0px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr)
+}
+
+.header__theme-menu {
+  grid-column: 5;
+  grid-row: 1;
+}
+
+.header__theme-menu-list{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }

@@ -2,3 +2,11 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --bg-color-dark:url(../images/cover-image-dark.png);
+  --fucsia: rgb(255, 0, 112);
+  --FoSi-menu:18px;
+  --FoSi-header:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --purple:#DB00FF;
+  --black:#000000;
+}

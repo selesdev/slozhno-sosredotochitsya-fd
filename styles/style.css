@@ -1,28 +1,110 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+.page {
+  background-image:var(--bg-color-dark);
+}
+  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 
 .header {
-  background-image:url(../images/cover-image-dark.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-  min-height: 668px;
-  padding: 65px 0px;
+  min-height: 688px;
+  padding: 75px 10px 0px 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr)
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right:10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--fucsia);
+  border-right: 1px solid var(--fucsia);
+}
+
+.rec {
+  position: absolute;
+  top: 11px;
+  right: 21px;
+  color: var(--fucsia);
+  font-family: "IBM Plex mono", sans-serif;
+}
+
+.rec::after {
+  content: "";
+  display: inline-block;
+  background: var(--fucsia);
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 2px var(--fucsia);
+  padding-left: 10px;
 }
 
 .header__theme-menu {
   grid-column: 5;
-  grid-row: 1;
+  justify-self: end;
 }
 
 .header__theme-menu-list{
  display: flex;
  flex-direction: column;
- gap: 10px;
+ justify-content: center;
+ gap: 15px;
 }
 
-.page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+  color: var(--fucsia);
+  font-size: var(--FoSi-menu);
+  text-transform: lowercase;
+  font-family: "IBM Plex mono", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  line-height: 18px;
+}
+
+.header__theme-menu-button:active {
+  border: 1px var(--fucsia) solid;
+}
+
+.title {
+  grid-column: 1/6;
+  font-size: var(--FoSi-header);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-transform: lowercase;
+  line-height: 95.7px;
+  align-items: start;
+  font-family: "IBM Plex mono", sans-serif;
+  color: var(--purple);
+  font-weight: bold; 
+  text-shadow: 4px 4px 0 var(--fucsia);
+}
+
+.diskription {
+  grid-column: 1/6;
+}
+
+.title_decor {
+  font-size: var(--FoSi-menu);
+  background-color: var(--fucsia);
+  color: var(--black);
+  line-height: 23.4px;
+  font-weight: bold; 
+  font-family: "IBM Plex mono", sans-serif;
+}
+
+.decorated-zone::after{
+  position: absolute;
+  content: "";
+  bottom: 0px;
+  left:10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--fucsia);
+  border-left: 1px solid var(--fucsia);
 }

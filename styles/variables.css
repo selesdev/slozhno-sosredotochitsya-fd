@@ -5,8 +5,12 @@
 :root {
   --bg-color-dark:url(../images/cover-image-dark.png);
   --fucsia: rgb(255, 0, 112);
-  --FoSi-menu:18px;
+  --FoSi-base:18px;
   --FoSi-header:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --purple:#DB00FF;
   --black:#000000;
+  --color-text:#000028;
+  --text-color:#F1B2CE;
+  --fo-Family: "IBM Plex mono";
+  --bold:bold;
 }

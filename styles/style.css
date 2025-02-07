@@ -1,6 +1,7 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 .page {
   background-image:var(--bg-image);
+  background-attachment: fixed;
 }
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 
@@ -9,7 +10,6 @@
   padding: 75px 10px 30px 10px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 3;
 }
 
 .decorated-zone::before {
@@ -347,7 +347,7 @@ position: absolute;
   .image_street {
     grid-column-start: 2;
     grid-column-end: 4;
-    grid-row-start: 3x;
+    grid-row-start: 3;
     grid-row-end: 4;
   }
 

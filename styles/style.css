@@ -105,11 +105,10 @@
 .title_decor {
   color: var(--color-text);
   font-family: "IBM Plex mono", sans-serif;
-  font-weight: bold; 
+  font-weight: bold;
   font-size: var(--FoSi-base);
   line-height: 23.4px;
   background-color: var(--fucsia);
-  ;
 }
 
 .decorated-zone::after {
@@ -182,7 +181,7 @@
 
 .gallery {
   display: grid;
-  gap: 10px ;
+  gap: 10px;
   margin: 10px 10px 0 10px;
 }
 
@@ -198,7 +197,7 @@
   align-items: start;
   color: var(--purple);
   font-family: "IBM Plex mono", sans-serif;
-  font-weight: bold; 
+  font-weight: bold;
   font-size: var(--FoSi-header);
   line-height: 95.7px;
   text-transform: lowercase;
@@ -541,6 +540,26 @@ position: absolute;
 }
 
 @media (prefers-color-scheme: light) {
+  :root {
+    --bg-image:url(../images/cover-image-light.png);
+    --fucsia: #FF8DCB;
+    --rec:transparent;
+    --bottom:#353430;
+    --FoSi-base:18px;
+    --FoSi-header:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --purple:#FFC2E6;
+    --black:#000000;
+    --color-text:#353430;
+    --text-color:#353430;
+    --fo-Family: "IBM Plex mono";
+    --bold:bold;
+    /* сохраните этот селектор в приведённом виде.
+      Так стили написанные ниже будут иметь больший вес,
+      чем стили в медиазапросе предпочтений пользователя
+    */
+  }
+
+  /*
   .page {
     background-color: var(  --bg-color);
   background-image:var(--bg-image);
@@ -578,7 +597,7 @@ position: absolute;
   }
 
   .title_decor {
-    color: var(--color-text); 
+    color: var(--color-text);
     font-size: var(--FoSi-base);
     background-color: var(--fucsia);
     ;
@@ -632,4 +651,5 @@ position: absolute;
     border-bottom: 1px solid var(--bottom);
     border-left: 1px solid var(--bottom);
   }
+  */
 }

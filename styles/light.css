@@ -7,6 +7,8 @@
 :root.theme-light {
   --bg-image:url(../images/cover-image-light.png);
   --fucsia: #FF8DCB;
+  --rec:transparent;
+  --bottom:#353430;
   --FoSi-base:18px;
   --FoSi-header:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --purple:#FFC2E6;

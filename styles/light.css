@@ -27,5 +27,39 @@
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+    --bg-image:url(../images/cover-image-light.png);
+    --fucsia: #FF8DCB;
+    --rec:transparent;
+    --buttom:#353430;
+    --FoSi-base:18px;
+    --FoSi-header:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --purple:#FFC2E6;
+    --black:#000000;
+    --color-text:#353430;
+    --text-color:#353430;
+    --fo-Family: "IBM Plex mono";
+    --bold:bold;
+    --bg-color:#FFF1F7;
+    --title-color:#353430;
+    --buttom-hover:#32312D66;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image:url(../images/cover-image-light.png);
+    --fucsia: #FF8DCB;
+    --rec:transparent;
+    --buttom:#353430;
+    --FoSi-base:18px;
+    --FoSi-header:clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    --purple:#FFC2E6;
+    --black:#000000;
+    --color-text:#353430;
+    --text-color:#353430;
+    --fo-Family: "IBM Plex mono";
+    --bold:bold;
+    --bg-color:#FFF1F7;
+    --title-color:#353430;
+  }
+
 }

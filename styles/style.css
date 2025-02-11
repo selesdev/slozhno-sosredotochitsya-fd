@@ -131,8 +131,8 @@
   left:10px;
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--fucsia);
-  border-left: 1px solid var(--fucsia);
+  border-bottom: 1px solid var(--buttom);
+  border-left: 1px solid var(--buttom);
 }
 
 .main {
@@ -174,11 +174,15 @@
 }
 
 .text__link:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--text-color);
+  border-bottom: 1px var(--text-color) solid;
 }
 
 .text__link:focus {
+  outline: none;
+}
+
+.text__link:focus-visible
+{
   border: 1px solid var(--text-color);
 }
 
@@ -223,12 +227,9 @@
 
 @media (768px <= width <= 1023px) {
   .header {
-    position: relative;
-    height: 100vh;
     min-height: 1024px;
     grid-template-rows: 20% 40% 20%;
     padding: 194px 20px 0px 0px;
-    
   }
 
 
@@ -238,9 +239,9 @@
 
   .diskription {
     width: 100%;
-    max-width: 35.5vh;
     justify-self: end;
     margin: 0px 0px 25px 0px;
+    max-width:364px;
   }
 
   .decorated-zone::before {
@@ -296,7 +297,7 @@
 
   .gallery {
     grid-template-columns: repeat(3, 0.6fr);
-    grid-template-rows: 25 repeat(4, 0.5fr);
+    grid-template-rows: 25PX repeat(4, 0.5fr);
     gap: 20px;
     margin: 20px 0px 0px 0px;
   }
@@ -332,8 +333,6 @@
 
   .footer {
     justify-content: center;
-    align-items: center;
-    height: 100vh;
     min-height: 1024px;
     margin-top: 60px;
     padding: 0px;
@@ -345,7 +344,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     row-gap: 63px;
-    height: 100vh;
     min-height: 768px;
     padding: 21px 0px 0px 0px;
   }
@@ -376,7 +374,6 @@
     align-self: flex-start;
     width: 100%;
     max-width:491px;
-    height: min-content;
   }
 
   .rec {
@@ -435,7 +432,7 @@
 
   .gallery {
     grid-template-columns: repeat(3, 0.6fr);
-    grid-template-rows: 25 repeat(4, 0.5fr);
+    grid-template-rows: 25px repeat(4, 0.5fr);
     gap: 20px;
     margin: 20px 0px 0px 0px;
   }
@@ -469,7 +466,6 @@
   }
 
   .footer {
-    height: 100vh;
     min-height: 768px;
     margin-top: 60px;
     padding: 0px;
